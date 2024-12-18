@@ -14,23 +14,34 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: lightblue;
+            color: #000000;
         }
 
         header {
-            background: #333;
+            background: black;
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
+        }
+
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+            border-radius: 50%;
         }
 
         section {
-            padding: 40px;
+            padding: 20px;
         }
 
         .intro, .skills, .projects, .contact {
@@ -109,29 +120,89 @@
             background-color: #333;
             color: white;
         }
+
+        .contat-card {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            height: 150px;
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contat-card a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #25D366; /* WhatsApp green color */
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .contat-card a:hover {
+            background-color: #128C7E; /* Darker shade on hover */
+        }
+
+        .linkedin-card {
+            background-color: #0077b5;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .linkedin-card a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #0077b5;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .linkedin-card a:hover {
+            background-color: #005f8c;
+        }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Hissain's Portfolio</h1>
-        <p>Python Developer | Web Developer | Problem Solver</p>
+        <img src="id photo.jpg" alt="Profile Picture"> <!-- Replace with your image URL -->
+        <h1>Sainath Patil</h1>
+        <p>Python Developer | Web Developer </p>
     </header>
 
     <section class="intro">
         <h2>About Me</h2>
-        <p>Hello! I'm Hissain, a passionate Python and web developer with experience in building scalable software solutions and web applications. I specialize in Django, machine learning, and building modern, user-friendly interfaces.</p>
+        <p>Hello! I'm Sainath, a passionate Python and web developer with experience in building scalable software solutions and web applications. I specialize in Django and Fullstack development, building modern, user-friendly interfaces.</p>
     </section>
 
     <section class="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Python</li>
+            <li>Core Python</li>
             <li>Django</li>
-            <li>Machine Learning</li>
+            <li>Data Analysis</li>
             <li>JavaScript</li>
             <li>HTML & CSS</li>
-            <li>SQL</li>
+            <li>SQLite</li>
+            <li>MySQL</li>
+            <li>Git and Github</li>
+            <li>BootStrap</li>
         </ul>
     </section>
 
@@ -139,33 +210,34 @@
         <h2>Projects</h2>
 
         <div class="project-card">
-            <h3>Billing Software</h3>
-            <p>A billing software system built with Python and Tkinter for a hardware store. Includes features like product management, billing, and report generation.</p>
+            <h3>Shop Billing Solution</h3>
+            <p>A billing software system built with Python and Modern Tkinter for an Electronic store. Includes features like product management, billing, and Bill storage.</p>
+            <p>This software is completely built using ChatGPT and Prompt Engineering skills.</p>
         </div>
 
         <div class="project-card">
-            <h3>Stock Market Analysis Tool</h3>
-            <p>A Python-based tool that analyzes stock market trends and provides buy/sell recommendations using machine learning algorithms.</p>
+            <h3>News Publish and Management</h3>
+            <p>A Django-based web application that helps news writers write news articles for news agencies.</p>
+            <p>Features: Admin can manage and approve articles, and news writers can write articles and solve queries raised by the admin.</p>
         </div>
 
-        <div class="project-card">
-            <h3>Blog Management Platform</h3>
-            <p>A Django-based blog management system that allows admins to manage posts, writers, and comments. It includes user authentication and management features.</p>
-        </div>
     </section>
 
     <section class="contact">
         <h2>Contact Me</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contat-card">
+            <h4>Direct WhatsApp Link:</h4>
+            <a href="https://chat.whatsapp.com/KRC8I31rWU079LbyrTuifv">WhatsApp Message</a>
+        </div>
+<br>
+        <div class="linkedin-card">
+            <h4>Connect on LinkedIn:</h4>
+            <a href="https://www.linkedin.com/in/your-profile-link" target="_blank">LinkedIn Profile</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Hissain. All Rights Reserved.</p>
+        <p>&copy; 2024 Sainath Patil. All Rights Reserved.</p>
     </footer>
 
 </body>
